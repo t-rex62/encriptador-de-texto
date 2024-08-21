@@ -4,7 +4,6 @@ const txtEncriptar = document.querySelector(".encriptar");
 const aviso = document.querySelector(".texto-aviso")
 const respuesta = document.querySelector(".evaluar");
 const contenido = document.querySelector(".tarjeta-contenedor");
-const btnCopiar = document.querySelector(".btn-copiar");
 const btnDesencriptar = document.querySelector(".btn-desencriptar");
 
 //--------Botón de Encriptar--------//
@@ -106,15 +105,6 @@ else if(texto !== texto.toLowerCase()){
         texto = texto.replace(/ufat/mg, "u");
 
         respuesta.innerHTML = texto
-        btnCopiar.style.visibility = "inherit";
         contenido.remove();
 }
-});
-
-//--------Botón de Copiar--------//
-btnCopiar.addEventListener("click", e=>{
-    e.preventDefault();
-    let copiar = respuesta;
-    copiar.select();
-    document.execCommand("copy");
 });
