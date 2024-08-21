@@ -17,7 +17,7 @@
     <!--Principal-->
 <main>
     <section class="encriptador">
-        <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+        <textarea name="encriptar" class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
         <div class="encriptador-aviso">
             <img src="./imagenes/bi_exclamation-circle-fill.png" alt="Imagen Aviso" class="img-aviso">
             <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
@@ -33,9 +33,7 @@
             <p class="texto-uno">Ningún mensaje fue encontrado</p>
             <p class="texto-dos">Ingresa el texto que deseas encriptar o desencriptar</p>
         </div>
-        <textarea type="mensaje" class="evaluar" readonly></textarea>
-        <button id="btnCopiar" type="submit" class="btn-copiar">Copiar</button>
-        <div id="respuesta">Este es el texto a copiar</div>
+        <textarea name="mensaje" type="mensaje" class="evaluar" readonly></textarea>
     </section>
 </main>
 
